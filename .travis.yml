@@ -3,7 +3,7 @@ language: python
 python: "3.6"
 install:
   - python -m pip install --upgrade pip
-  - pip install -r requirements.txt
+  - pip install -r required.txt
 script: 
   - python Lab2/TestCalculator.py
   - python Lab2/TestValidator.py
