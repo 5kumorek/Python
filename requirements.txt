@@ -1,0 +1,3 @@
+sympy
+mpmath>=0.19
+mock
