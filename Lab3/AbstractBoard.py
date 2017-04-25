@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-
+#taki tam komentarz kontrolny
 class AbstractBoard(ABC):
     @abstractmethod
     def printBoard(self):
