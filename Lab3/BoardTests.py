@@ -15,7 +15,7 @@ class BoardTests(unittest.TestCase):
         MyGame.movePlayer(1,1)
         MyGame.movePlayer(2,2)
         MyGame.movePlayer(3,3)
-        self.assertEqual(MyGame.checkPlayersWin(),true)
+        self.assertEqual(MyGame.checkPlayersWin(),True)
 
     def test_wchich_checks_CPU_win(self):
         MyGame = Board.Board(4, 'x')
@@ -23,7 +23,7 @@ class BoardTests(unittest.TestCase):
         MyGame.movePlayer(1, 1)
         MyGame.movePlayer(2, 2)
         MyGame.movePlayer(3, 3)
-        self.assertEqual(MyGame.checkCPUsWin(), true)
+        self.assertEqual(MyGame.checkCPUsWin(), True)
 
 
     def test_check_if_diagonal_is_full(self):
@@ -32,7 +32,7 @@ class BoardTests(unittest.TestCase):
         MyGame.movePlayer(1, 1)
         MyGame.movePlayer(2, 2)
         MyGame.movePlayer(3, 3)
-        self.assertEqual(MyGame.checkDiagonal(), true)
+        self.assertEqual(MyGame.checkDiagonal(MyGame.arrayPlayer, True), True)
 
     def test_check_if_index_is_out_of_array(self):
         MyGame = Board.Board(4, 'x')
