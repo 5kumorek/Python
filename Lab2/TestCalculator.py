@@ -90,3 +90,6 @@ class TestCalculator(unittest.TestCase):
         value1 = 'x**2'
         value2 = 'x'
         self.assertEqual(calculator.Derivative(value1, value2), my_mock(value1, value2))
+
+if __name__=='__main__':
+    unittest.main(exit=False)

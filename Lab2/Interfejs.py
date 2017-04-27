@@ -1,5 +1,6 @@
 import Calculator
 import sys
+import MyExceptions
 calc = Calculator.Calculator()
 print("Hi, you want calculate something?[Y/N]")
 while True:
@@ -21,7 +22,12 @@ while True:
     elif Choice==2:
         firstNumber = float(input("First number\n"))
         secondNumber = float(input("Second number\n"))
-        print("Result {0}/{1}={2}".format(firstNumber,secondNumber,calc.Divide(firstNumber,secondNumber)))
+        try:
+            wynik = calc.Divide(firstNumber,secondNumber)
+            print("Result {0}/{1}={2}".format(firstNumber,secondNumber,wynik))
+        except MyExceptions.isZero:
+            print("Nu, nu, nu not divide per zero\n")
+
 
     elif Choice == 3:
         firstNumber = str(input("Function\n"))
@@ -31,7 +37,15 @@ while True:
     elif Choice == 4:
         firstNumber = float(input("First number\n"))
         secondNumber = float(input("Second number\n"))
-        print("Result logarytm o podstawie {1} z {0}={2}".format(firstNumber, secondNumber, calc.Logarithm(firstNumber, secondNumber)))
+        try:
+            wynik=calc.Logarithm(firstNumber, secondNumber)
+            print("Result logarytm o podstawie {1} z {0}={2}".format(firstNumber, secondNumber, wynik))
+        except MyExceptions.itsNotNumber:
+            print("Please, give mi numbers\n")
+        except MyExceptions.isOne:
+            print("Please, first number must be different one\n")
+        except MyExceptions.isLoverThanZero:
+            print("Please, first number must be highter than zero\n")
 
     else:
         print("Wrong button? Choose again")

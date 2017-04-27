@@ -1,6 +1,6 @@
 from sympy import diff
 import AbstractClass
-from Validator import Validator
+import Validator
 from MyExceptions import itsNotNumber, itsNotString, isLoverThanZero, isOne, isZero
 import math
 
@@ -8,19 +8,19 @@ import math
 class Calculator(AbstractClass.AbstractClass):
     # Dodawanie
     def Addition(self, first, second):
-        if not Validator.isNumber(first):
+        if not Validator.Validator.isNumber(first):
             raise itsNotNumber(first)
-        if not Validator.isNumber(second):
+        if not Validator.Validator.isNumber(second):
             raise itsNotNumber(second)
         return first + second
 
     # Dzielenie
     def Divide(self, first, second):
-        if not Validator.isNumber(first):
+        if not Validator.Validator.isNumber(first):
             raise itsNotNumber(first)
-        if not Validator.isNumber(second):
+        if not Validator.Validator.isNumber(second):
             raise itsNotNumber(second)
-        if Validator.isZero(second):
+        if Validator.Validator.isZero(second):
             raise isZero(second)
         return first / second
 
@@ -30,16 +30,16 @@ class Calculator(AbstractClass.AbstractClass):
 
     # Logarytmowanie
     def Logarithm(self, first, second):
-        if not Validator.isNumber(first):
+        if not Validator.Validator.isNumber(first):
             raise itsNotNumber(first)
-        if Validator.isOne(first):
+        if Validator.Validator.isOne(first):
             raise isOne(first)
-        if not Validator.isHighterThanZero(first):
+        if not Validator.Validator.isHighterThanZero(first):
             raise isLoverThanZero(first)
 
-        if not Validator.isNumber(second):
+        if not Validator.Validator.isNumber(second):
             raise itsNotNumber(second)
-        if not Validator.isHighterThanZero(second):
+        if not Validator.Validator.isHighterThanZero(second):
             raise isLoverThanZero(second)
 
         return math.log(first, second)

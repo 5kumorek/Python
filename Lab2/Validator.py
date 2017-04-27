@@ -10,10 +10,10 @@ class Validator:
         return isinstance(value, int) or isinstance(value, float)
     @staticmethod
     def isZero(value):
-        return Validator.assertZero(value, 0)
+        return CalcValidator.assertZero(value, 0)
     @staticmethod
     def isHighterThanZero(value):
         return value>0
     @staticmethod
     def isOne(value):
-        return Validator.assertZero(value,1)
+        return CalcValidator.assertZero(value,1)
