@@ -1,16 +1,28 @@
-class Validator:
+class NumbersValidator:
     @staticmethod
     def variablesAreValid(x,y,size):
         if isinstance(x, int) and isinstance(y,int):
-            return x<size and y<size
+            return x<=size and x>0 and y<=size and y>0
         else:
-            MyException.NotAInt()
-
-class MyException(Exception):
-    @staticmethod
-    def NotAInt(self):
-        pass
+            NotAInt()
 
     @staticmethod
-    def OutOfBoard(self):
-        pass
+    def isInt(x):
+        try:
+            x=int(x)
+            return True
+        except:
+            return False
+
+    @staticmethod
+    def sizeOfBoardIsValid(size):
+        if isinstance(size, int):
+            return size<10
+        else:
+            NotAInt()
+
+class NotAInt(Exception):
+    pass
+
+class OutOfBoard(Exception):
+    pass

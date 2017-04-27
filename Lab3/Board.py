@@ -1,13 +1,13 @@
 import random
 from AbstractBoard import AbstractBoard
-from Validator import Validator
-from Validator import MyException
+from Validator import NumbersValidator
+import Validator
 
 class Board(AbstractBoard):
     sizeBoard=0
     arrayChars = [' ','x','o']
-    charPlayer='x'
-    charCPU='o'
+    charPlayer = 'x'
+    charCPU = 'o'
     arrayPlayer=None
     arrayCPU=None
     arrayGame=None
@@ -17,22 +17,24 @@ class Board(AbstractBoard):
         self.arrayGame= [[0 for x in range(size)] for y in range(size)]
         self.arrayPlayer = [[0 for x in range(size)] for y in range(size)]
         self.arrayCPU = [[0 for x in range(size)] for y in range(size)]
-        if(char=='o'):
+        if(char is 'o'):
             self.arrayChars = [' ', 'o', 'x']
 
-    #metoda do wypisywania mojej planszy
+    #metoda zwraca stringa który opisuje moją plansze
     def printBoard(self):
+        finalString=''
         for i in range(2*self.sizeBoard-1):
             if i%2==0:
                 for j in range(2*self.sizeBoard-1):
                     if j%2==0:
-                        print(self.arrayChars[self.arrayGame[i//2][j//2]], end='', flush=True)
+                        finalString=finalString+self.arrayChars[self.arrayGame[i//2][j//2]]
                     else:
-                        print('|', end='', flush=True)
+                        finalString = finalString +'|'
             else:
                 for j in range(2 * self.sizeBoard - 1):
-                    print('-', end='', flush=True)
-            print('')
+                    finalString = finalString +'-'
+            finalString = finalString +'\n'
+        return finalString
 
     #metoda która sprawi że wybory gracza zostaną zapamiętane
     def movePlayer(self, x, y):
@@ -44,17 +46,18 @@ class Board(AbstractBoard):
         while True:
             x=random.randint(0,self.sizeBoard-1)
             y=random.randint(0,self.sizeBoard-1)
-            if self.checkCoordinates(x,y):
+            if self.checkCoordinates(x+1,y+1):
                 break
         self.arrayCPU[x][y]=1
         self.arrayGame[x][y]=2
 
     #metoda która sprawdzi czy podany ruch jest możliwy
     def checkCoordinates(self, x, y):
-        if Validator.variablesAreValid(x,y,self.sizeBoard):
-            return self.arrayGame[x][y]==0
+        if NumbersValidator.variablesAreValid(x,y,self.sizeBoard):
+            return self.arrayGame[x-1][y-1]==0
         else:
-            return MyException.OutOfBoard()
+            raise Validator.OutOfBoard
+            #return False
 
     #metoda sprawdza czy nie wygrał gracz
     def checkPlayersWin(self):
