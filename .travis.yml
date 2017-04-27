@@ -7,5 +7,6 @@ install:
 script: 
   - python Lab2/TestCalculator.py
   - python Lab2/TestValidator.py
+  - python3 Lab3/BoardTests.py
 notifications:
   email: false
