@@ -46,18 +46,20 @@ class Board(AbstractBoard):
         while True:
             x=random.randint(0,self.sizeBoard-1)
             y=random.randint(0,self.sizeBoard-1)
-            if self.checkCoordinates(x+1,y+1):
+            try:
+                self.checkCoordinates(x,y)
                 break
+            except Validator.FieldIsOccupiedError:
+                continue
         self.arrayCPU[x][y]=1
         self.arrayGame[x][y]=2
 
     #metoda która sprawdzi czy podany ruch jest możliwy
     def checkCoordinates(self, x, y):
-        if NumbersValidator.variablesAreValid(x,y,self.sizeBoard):
-            return self.arrayGame[x-1][y-1]==0
-        else:
-            raise Validator.OutOfBoard
-            #return False
+        if x>=self.sizeBoard or x<0 or y>=self.sizeBoard or y<0:
+            raise Validator.OutOfArrayError
+        if self.arrayGame[x][y]!=0:
+            raise Validator.FieldIsOccupiedError
 
     #metoda sprawdza czy nie wygrał gracz
     def checkPlayersWin(self):

@@ -1,28 +1,46 @@
 class NumbersValidator:
-    @staticmethod
-    def variablesAreValid(x,y,size):
-        if isinstance(x, int) and isinstance(y,int):
-            return x<=size and x>0 and y<=size and y>0
-        else:
-            NotAInt()
 
     @staticmethod
-    def isInt(x):
+    def IsInt(value):
         try:
-            x=int(x)
-            return True
-        except:
-            return False
+            int(value)
+        except ValueError:
+            raise NotAInt()
 
     @staticmethod
     def sizeOfBoardIsValid(size):
-        if isinstance(size, int):
-            return size<10
-        else:
-            NotAInt()
+        try:
+            NumbersValidator.IsInt(size)
+            if int(size)<2 or int(size)>9:
+                raise WrongSizeboardError
+        except NotAInt:
+            raise WrongSizeboardError
+
+    def GuessedValueIsValid(value):
+        try:
+            NumbersValidator.IsInt(value)
+            if int(value)<1 or int(value)>101:
+                raise InvalidValueError
+        except NotAInt:
+            raise NotAInt
 
 class NotAInt(Exception):
     pass
 
-class OutOfBoard(Exception):
+class WrongSizeboardError(Exception):
+    pass
+
+class InvalidValueError(Exception):
+    pass
+
+class InvalidPortError(Exception):
+    pass
+
+class EndOfGameError(Exception):
+    pass
+
+class FieldIsOccupiedError(Exception):
+    pass
+
+class OutOfArrayError(Exception):
     pass
