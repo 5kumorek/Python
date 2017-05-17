@@ -26,8 +26,6 @@ class EchoServer:
             except socket.error:
                 port+=1
                 continue
-            finally:
-                self.serverSocket.close()
         print('bind to {0} port {1}'.format(address, port))
 
 
