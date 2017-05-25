@@ -1,0 +1,13 @@
+package Lab3;
+
+message msg {
+  required int32 typeA = 1;
+  optional int32 stateA=2;
+  optional string sentenceA = 3;
+  optional int32 gameS = 4;
+  optional int32 numberG = 5;
+  optional int32 sizeT = 6;
+  optional string crossT = 7;
+  optional int32 xT = 8;
+  optional int32 yT = 9;
+  }
