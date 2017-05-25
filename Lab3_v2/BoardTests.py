@@ -1,6 +1,5 @@
 import unittest
 import Board
-import Validator
 
 class BoardTests(unittest.TestCase):
     def test_check_players_move_is_correct(self):
