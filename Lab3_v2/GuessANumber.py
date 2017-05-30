@@ -1,4 +1,5 @@
 import random
+import logging
 from ManageProtobuf import *
 from Validator import *
 from StatesFile import State
@@ -16,11 +17,13 @@ class GuessANumber(State):
         self.connection = connection
 
     def run(self):
+        logging.info('Current state %s', 'GuessANumber')
         msg_rec = proto.msg()
         if Helpfull.firstInvoked:
             minValue = 0
             maxValue = 100
             Helpfull.finalValue = random.randint(minValue, maxValue)
+            logging.info('Value to find %s', Helpfull.finalValue)
             print(Helpfull.finalValue)
             # definiuje wiadomość
             self.msg.typeA = 3
@@ -34,8 +37,7 @@ class GuessANumber(State):
         self.msg.stateA = 0
         sendMessage(self.connection, self.msg)
         msg_rec = getResponse(self.connection)
-        temp = DictionaryOfClass[msg_rec.typeA](msg_rec)
-        self.value = temp.getMessage()
+        self.value = DictionaryOfClass[msg_rec.typeA]().getMessage(msg_rec)
 
     def getState(self):
         try:
@@ -44,6 +46,7 @@ class GuessANumber(State):
                 self.msg.stateA = 1
                 self.msg.sentenceA = "Congratulation you win. Wanted value = {}".format(self.value)
                 sendMessage(self.connection, self.msg)
+                logging.info('State %s is finished', 'GuessANumber')
                 return 0
             elif int(self.value) < Helpfull.finalValue:
                 self.msg.sentenceA = "Too low. "

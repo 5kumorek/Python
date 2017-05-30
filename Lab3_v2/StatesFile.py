@@ -1,6 +1,6 @@
 from abc import ABCMeta, abstractmethod
 from ManageProtobuf import *
-
+import logging
 from Validator import *
 
 class State(metaclass=ABCMeta):
@@ -21,19 +21,20 @@ class ServerListeningGame(State):
         self.value=0
 
     def run(self):
+        logging.info('Current state %s', 'ServerListeningGame')
         self.msg.typeA = 1
         self.msg.stateA = 0
         self.msg.sentenceA = "Select a game. 1-TicTacToe, 2-GuessANumber, 3-End"
         sendMessage(self.connection, self.msg)
         self.msg = getResponse(self.connection)
-        temp = DictionaryOfClass[self.msg.typeA](self.msg)
-        self.value = temp.getMessage()
+        self.value = DictionaryOfClass[self.msg.typeA]().getMessage(self.msg)
 
     def getState(self):
         try:
             NumbersValidator.GameNumberIsValid(self.value)
             if self.value == 3:
                 return 100
+            logging.info('State %s is finished', 'ServerListeningGame')
             return self.value
         except NotAInt:
             self.msg.typeA = 1

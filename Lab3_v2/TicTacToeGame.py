@@ -1,5 +1,5 @@
 import Board
-import random
+import logging
 from ManageProtobuf import *
 from Validator import *
 from StatesFile import State
@@ -20,6 +20,7 @@ class Size(State):
         self.connection = connection
 
     def run(self):
+        logging.info('Current state %s', 'WaitingOnSize')
         self.msg.typeA = 5
         if TicTacToeGame.firstInvoked:
             self.msg.stateA = 1
@@ -30,20 +31,20 @@ class Size(State):
         self.msg.stateA = 0
         sendMessage(self.connection, self.msg)
         msg_rec = getResponse(self.connection)
-        temp = DictionaryOfClass[msg_rec.typeA](msg_rec)
-        self.value = temp.getMessage()
+        self.value = DictionaryOfClass[msg_rec.typeA]().getMessage(msg_rec)
 
     def getState(self):
         try:
             NumbersValidator.SizeOfBoardIsValid(self.value)
             TicTacToeGame.finalSize=int(self.value)
+            logging.info('State %s is finished', 'WaitingOnSize')
             return 3
         except NotAInt:
             self.msg.stateA = 1
             self.msg.sentenceA = "Write integer"
             sendMessage(self.connection, self.msg)
             return 1
-        except InvalidValueError:
+        except WrongSizeboardError:
             self.msg.stateA = 1
             self.msg.sentenceA = "Write 1-9"
             sendMessage(self.connection, self.msg)
@@ -55,13 +56,13 @@ class Char(State):
         self.connection = connection
 
     def run(self):
+        logging.info('Current state %s', 'WaitingOnChar')
         self.msg.typeA = 7
         self.msg.stateA = 0
         self.msg.sentenceA = "'o' or 'x'?- x is default value"
         sendMessage(self.connection, self.msg)
         msg_rec = getResponse(self.connection)
-        temp = DictionaryOfClass[msg_rec.typeA](msg_rec)
-        self.value = temp.getMessage()
+        self.value = DictionaryOfClass[msg_rec.typeA]().getMessage(msg_rec)
 
     def getState(self):
         try:
@@ -69,6 +70,7 @@ class Char(State):
             TicTacToeGame.finalChar=self.value
         finally:
             TicTacToeGame.game = Board.Board(TicTacToeGame.finalSize, TicTacToeGame.finalChar)
+            logging.info('State %s is finished', 'WaitingOnChar')
             return 4
 
 class SelectXandY(State):
@@ -77,28 +79,26 @@ class SelectXandY(State):
         self.connection = connection
 
     def run(self):
+        logging.info('Current state %s', 'SeletctXandY')
         self.msg.typeA = 9
         self.msg.stateA = 0
         self.msg.sentenceA = "Select x coordinate"
         sendMessage(self.connection, self.msg)
         msg_rec = getResponse(self.connection)
-        temp = DictionaryOfClass[msg_rec.typeA](msg_rec)
-        self.x = temp.getMessage()
+        self.x = DictionaryOfClass[msg_rec.typeA]().getMessage(msg_rec)
         #teraz wybieramy y
         self.msg.typeA = 11
         self.msg.stateA = 0
         self.msg.sentenceA = "Select y coordinate"
         sendMessage(self.connection, self.msg)
         msg_rec = getResponse(self.connection)
-        temp = DictionaryOfClass[msg_rec.typeA](msg_rec)
-        self.y = temp.getMessage()
+        self.y = DictionaryOfClass[msg_rec.typeA]().getMessage(msg_rec)
 
     def getState(self):
         try:
             NumbersValidator.IsInt(self.x)
             NumbersValidator.IsInt(self.y)
-            x, y = int(self.x) - 1, int(self.y)
-            print(x,'wynosi ', y)
+            x, y = int(self.x) - 1, int(self.y)-1
             TicTacToeGame.game.checkCoordinates(x, y)
         except NotAInt:
             self.msg.typeA = 9
@@ -128,6 +128,7 @@ class SelectXandY(State):
             self.msg.stateA = 1
             self.msg.sentenceA = "You win!!"
             sendMessage(self.connection, self.msg)
+            logging.info('State %s is finished', 'SeletctXandY')
             return 0
         TicTacToeGame.game.moveCPU()
         self.msg.typeA = 9
@@ -139,5 +140,6 @@ class SelectXandY(State):
             self.msg.stateA = 1
             self.msg.sentenceA = 'Unfortunately you lose'
             sendMessage(self.connection, self.msg)
+            logging.info('State %s is finished', 'SeletctXandY')
             return 0
         return 4

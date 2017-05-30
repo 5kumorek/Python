@@ -6,6 +6,8 @@
         <list>
           <option value="Board" />
           <option value="Lab3.Board.*" />
+          <option value="Lab3_v2.EchoServer.*" />
+          <option value="message_pb2" />
         </list>
       </option>
     </inspection_tool>

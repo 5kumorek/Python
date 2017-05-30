@@ -5,7 +5,7 @@ import message_pb2
 from ManageProtobuf import *
 
 #wartość zmiennej self.listening określa stan:0-wyślij wartość
-#1-nasłuchuj, 2- zakończ program
+#1-nasłuchuj,
 class EchoClient:
     def __init__(self, address, port, data_size):
         self.listening = 1
@@ -24,31 +24,26 @@ class EchoClient:
 
     def sendMsg(self,typ):
         try:
+            #client wpisuje wartość
             value = input()
-            self.msg.typeA = typ
-            if typ==2:
-                self.msg.gameS = int(value)
-            elif typ==4:
-                self.msg.numberG = int(value)
-            elif typ==6:
-                self.msg.sizeT = int(value)
-            elif typ==8:
-                self.msg.crossT = value
-            else:
-                self.msg.xT = int(value)
-            # ciekawe czy tak może być self.msg[typ+2] = value
-            sendMessage(self.sock, self.msg)
+            #client wysyła swoją wartość i typ, czyli definiuje
+            # jakę chce wiadomość wysłać
+
+            makeAndSendMessage(self.sock, value, typ)
+            #zmieniam stan mojego servera na nasłuchiwanie
             self.listening = 1
-        except TypeError:
-            print("Write number")
-        except ValueError:
+        except InvalidValueError:
             print("Write number")
 
     def receiveMsg(self):
         msg = getResponse(self.sock)
         if msg:
+            #client rozkodowuje wiadomość przy pomocy klas
             temp = DictionaryOfClass[msg.typeA](msg)
+            #wypisuje wiadomość otrzymaną od servera
             print(temp.getMessage())
+            #sprawdzam jaki stan mi nakazał server, czy kazał mi nasłuchiwać
+            #czy mam wysłać wiadomość
             self.listening = msg.stateA
         return msg.typeA
 
@@ -60,7 +55,9 @@ if __name__ == '__main__':
         data_size  = 1024
         client = EchoClient(host, port, data_size)
         t=1
-        while int(client.listening)!=22:
+        #t = 1 to znaczy że zaczynamy program od nasłuchiwania od servera
+        while int(client.listening)!=100:
+            #jeżeli mam nasluchiwać to nasłuchuje, jeśli nie to wysyłam wiadomość
             if client.listening:
                 t = client.receiveMsg()
             else:
