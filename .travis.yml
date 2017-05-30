@@ -9,5 +9,6 @@ script:
   - python Lab2/TestValidator.py
   - python3 Lab3/BoardTests.py
   - python3 Lab3_v2/BoardTests.py
+  - python3 Lab3_v2/ClientServerTests.py
 notifications:
   email: false
