@@ -5,8 +5,6 @@ from Validator import *
 
 class EchoServer:
     def __init__(self, address, port, data_size):
-        #ten try to takie zabezpieczenie czegoś co powinno być zawsze poprawne
-        # bo jest na sztywno wpisane do programu
         try:
             NumbersValidator.IsInt(port)
             if port<0 or port>65535:
