@@ -1,0 +1,1063 @@
+**Script version 2.0.2.0**
+5	486
+2	Left Down
+5	164
+2	Left Up
+5	3567
+2	Left Down
+5	147
+2	Left Up
+5	429
+2	Left Down
+5	157
+2	Left Up
+5	221
+5	149
+2	Left Down
+5	165
+2	Left Up
+5	325
+2	Left Down
+5	149
+2	Left Up
+5	445
+2	Left Down
+5	125
+2	Left Up
+5	397
+2	Left Down
+5	149
+2	Left Up
+5	397
+2	Left Down
+5	125
+2	Left Up
+5	477
+2	Left Down
+5	125
+2	Left Up
+5	429
+2	Left Down
+5	181
+2	Left Up
+5	373
+2	Left Down
+5	165
+2	Left Up
+5	317
+2	Left Down
+5	173
+2	Left Up
+5	357
+2	Left Down
+5	189
+2	Left Up
+5	1805
+2	Left Down
+5	125
+2	Left Up
+5	3789
+2	Left Down
+5	141
+2	Left Up
+5	413
+2	Left Down
+5	149
+2	Left Up
+5	397
+2	Left Down
+5	141
+2	Left Up
+5	397
+2	Left Down
+5	173
+2	Left Up
+5	381
+2	Left Down
+5	165
+2	Left Up
+5	413
+2	Left Down
+5	125
+2	Left Up
+5	381
+2	Left Down
+5	133
+2	Left Up
+5	501
+2	Left Down
+5	133
+2	Left Up
+5	365
+2	Left Down
+5	157
+2	Left Up
+5	429
+2	Left Down
+5	133
+2	Left Up
+5	333
+2	Left Down
+5	157
+2	Left Up
+5	269
+2	Left Down
+5	149
+2	Left Up
+5	197
+2	Left Down
+5	61
+2	Left Up
+5	1869
+2	Left Down
+5	101
+2	Left Up
+5	3453
+2	Left Down
+5	117
+2	Left Up
+5	469
+2	Left Down
+5	165
+2	Left Up
+5	365
+2	Left Down
+5	133
+2	Left Up
+5	357
+2	Left Down
+5	181
+2	Left Up
+5	317
+2	Left Down
+5	125
+2	Left Up
+5	413
+2	Left Down
+5	85
+2	Left Up
+5	445
+2	Left Down
+5	141
+2	Left Up
+5	589
+2	Left Down
+5	109
+2	Left Up
+5	365
+2	Left Down
+5	149
+2	Left Up
+5	381
+2	Left Down
+5	141
+2	Left Up
+5	397
+2	Left Down
+5	165
+2	Left Up
+5	317
+2	Left Down
+5	157
+2	Left Up
+5	1885
+2	Left Down
+5	141
+2	Left Up
+5	3413
+2	Left Down
+5	133
+2	Left Up
+5	405
+2	Left Down
+5	117
+2	Left Up
+5	445
+2	Left Down
+5	125
+2	Left Up
+5	509
+2	Left Down
+5	133
+2	Left Up
+5	357
+2	Left Down
+5	149
+2	Left Up
+5	333
+2	Left Down
+5	157
+2	Left Up
+5	341
+2	Left Down
+5	157
+2	Left Up
+5	493
+2	Left Down
+5	141
+2	Left Up
+5	381
+2	Left Down
+5	133
+2	Left Up
+5	349
+2	Left Down
+5	141
+2	Left Up
+5	397
+2	Left Down
+5	149
+2	Left Up
+5	333
+2	Left Down
+5	141
+2	Left Up
+5	1757
+2	Left Down
+5	133
+2	Left Up
+5	3365
+2	Left Down
+5	157
+2	Left Up
+5	381
+2	Left Down
+5	157
+2	Left Up
+5	429
+2	Left Down
+5	165
+2	Left Up
+5	405
+2	Left Down
+5	181
+2	Left Up
+5	333
+2	Left Down
+5	173
+2	Left Up
+5	397
+2	Left Down
+5	165
+2	Left Up
+5	317
+2	Left Down
+5	149
+2	Left Up
+5	485
+2	Left Down
+5	133
+2	Left Up
+5	405
+2	Left Down
+5	181
+2	Left Up
+5	333
+2	Left Down
+5	189
+2	Left Up
+5	333
+2	Left Down
+5	165
+2	Left Up
+5	333
+2	Left Down
+5	141
+2	Left Up
+5	1693
+2	Left Down
+5	117
+2	Left Up
+5	3509
+2	Left Down
+5	93
+2	Left Up
+5	493
+2	Left Down
+5	205
+2	Left Up
+5	413
+2	Left Down
+5	189
+2	Left Up
+5	317
+2	Left Down
+5	277
+2	Left Up
+5	205
+2	Left Down
+5	157
+2	Left Up
+5	309
+2	Left Down
+5	157
+2	Left Up
+5	413
+2	Left Down
+5	165
+2	Left Up
+5	469
+2	Left Down
+5	165
+2	Left Up
+5	357
+2	Left Down
+5	165
+2	Left Up
+5	365
+2	Left Down
+5	173
+2	Left Up
+5	341
+2	Left Down
+5	189
+2	Left Up
+5	285
+2	Left Down
+5	133
+2	Left Up
+5	1677
+2	Left Down
+5	109
+2	Left Up
+5	3557
+2	Left Down
+5	101
+2	Left Up
+5	469
+2	Left Down
+5	181
+2	Left Up
+5	373
+2	Left Down
+5	149
+2	Left Up
+5	429
+2	Left Down
+5	205
+2	Left Up
+5	301
+2	Left Down
+5	229
+2	Left Up
+5	253
+2	Left Down
+5	221
+2	Left Up
+5	269
+2	Left Down
+5	181
+2	Left Up
+5	453
+2	Left Down
+5	133
+2	Left Up
+5	477
+2	Left Down
+5	141
+2	Left Up
+5	301
+2	Left Down
+5	197
+2	Left Up
+5	333
+2	Left Down
+5	157
+2	Left Up
+5	317
+2	Left Down
+5	133
+2	Left Up
+5	2165
+2	Left Down
+5	125
+2	Left Up
+5	3333
+2	Left Down
+5	213
+2	Left Up
+5	365
+2	Left Down
+5	109
+2	Left Up
+5	413
+2	Left Down
+5	133
+2	Left Up
+5	333
+2	Left Down
+5	125
+2	Left Up
+5	429
+2	Left Down
+5	133
+2	Left Up
+5	405
+2	Left Down
+5	133
+2	Left Up
+5	397
+2	Left Down
+5	101
+2	Left Up
+5	549
+2	Left Down
+5	117
+2	Left Up
+5	469
+2	Left Down
+5	197
+2	Left Up
+5	349
+2	Left Down
+5	173
+2	Left Up
+5	333
+2	Left Down
+5	165
+2	Left Up
+5	285
+2	Left Down
+5	157
+2	Left Up
+5	1853
+2	Left Down
+5	101
+2	Left Up
+5	3453
+2	Left Down
+5	133
+2	Left Up
+5	485
+2	Left Down
+5	181
+2	Left Up
+5	381
+2	Left Down
+5	173
+2	Left Up
+5	333
+2	Left Down
+5	149
+2	Left Up
+5	373
+2	Left Down
+5	181
+2	Left Up
+5	333
+2	Left Down
+5	173
+2	Left Up
+5	357
+2	Left Down
+5	157
+2	Left Up
+5	461
+2	Left Down
+5	157
+2	Left Up
+5	381
+2	Left Down
+5	165
+2	Left Up
+5	349
+2	Left Down
+5	157
+2	Left Up
+5	365
+2	Left Down
+5	165
+2	Left Up
+5	301
+2	Left Down
+5	141
+2	Left Up
+5	1805
+2	Left Down
+5	101
+2	Left Up
+5	3189
+2	Left Down
+5	149
+2	Left Up
+5	237
+2	Left Down
+5	85
+2	Left Up
+5	533
+2	Left Down
+5	133
+2	Left Up
+5	469
+2	Left Down
+5	149
+2	Left Up
+5	381
+2	Left Down
+5	125
+2	Left Up
+5	333
+2	Left Down
+5	165
+2	Left Up
+5	333
+2	Left Down
+5	125
+2	Left Up
+5	381
+2	Left Down
+5	133
+2	Left Up
+5	509
+2	Left Down
+5	77
+2	Left Up
+5	397
+2	Left Down
+5	181
+2	Left Up
+5	421
+2	Left Down
+5	133
+2	Left Up
+5	349
+2	Left Down
+5	157
+2	Left Up
+5	413
+2	Left Down
+5	149
+2	Left Up
+5	2445
+2	Left Down
+5	85
+2	Left Up
+5	3493
+2	Left Down
+5	109
+2	Left Up
+5	493
+2	Left Down
+5	117
+2	Left Up
+5	437
+2	Left Down
+5	149
+2	Left Up
+5	397
+2	Left Down
+5	125
+2	Left Up
+5	429
+2	Left Down
+5	165
+2	Left Up
+5	285
+2	Left Down
+5	157
+2	Left Up
+5	349
+2	Left Down
+5	117
+2	Left Up
+5	533
+2	Left Down
+5	165
+2	Left Up
+5	349
+2	Left Down
+5	141
+2	Left Up
+5	413
+2	Left Down
+5	165
+2	Left Up
+5	285
+2	Left Down
+5	189
+2	Left Up
+5	333
+2	Left Down
+5	149
+2	Left Up
+5	1613
+2	Left Down
+5	133
+2	Left Up
+5	3421
+2	Left Down
+5	149
+2	Left Up
+5	317
+2	Left Down
+5	149
+2	Left Up
+5	421
+2	Left Down
+5	165
+2	Left Up
+5	429
+2	Left Down
+5	141
+2	Left Up
+5	381
+2	Left Down
+5	133
+2	Left Up
+5	437
+2	Left Down
+5	197
+2	Left Up
+5	269
+2	Left Down
+5	133
+2	Left Up
+5	581
+2	Left Down
+5	133
+2	Left Up
+5	285
+2	Left Down
+5	125
+2	Left Up
+5	477
+2	Left Down
+5	157
+2	Left Up
+5	341
+2	Left Down
+5	157
+2	Left Up
+5	285
+2	Left Down
+5	165
+2	Left Up
+5	1749
+2	Left Down
+5	133
+2	Left Up
+5	3429
+2	Left Down
+5	141
+2	Left Up
+5	461
+2	Left Down
+5	181
+2	Left Up
+5	357
+2	Left Down
+5	165
+2	Left Up
+5	365
+2	Left Down
+5	173
+2	Left Up
+5	381
+2	Left Down
+5	213
+2	Left Up
+5	285
+2	Left Down
+5	189
+2	Left Up
+5	285
+2	Left Down
+5	133
+2	Left Up
+5	533
+2	Left Down
+5	133
+2	Left Up
+5	349
+2	Left Down
+5	173
+2	Left Up
+5	365
+2	Left Down
+5	181
+2	Left Up
+5	317
+2	Left Down
+5	149
+2	Left Up
+5	309
+2	Left Down
+5	229
+2	Left Up
+5	1581
+2	Left Down
+5	117
+2	Left Up
+5	3437
+2	Left Down
+5	181
+2	Left Up
+5	349
+2	Left Down
+5	101
+2	Left Up
+5	501
+2	Left Down
+5	117
+2	Left Up
+5	381
+2	Left Down
+5	141
+2	Left Up
+5	381
+2	Left Down
+5	149
+2	Left Up
+5	405
+2	Left Down
+5	133
+2	Left Up
+5	397
+2	Left Down
+5	125
+2	Left Up
+5	541
+2	Left Down
+5	189
+2	Left Up
+5	413
+2	Left Down
+5	149
+2	Left Up
+5	301
+2	Left Down
+5	157
+2	Left Up
+5	317
+2	Left Down
+5	165
+2	Left Up
+5	349
+2	Left Down
+5	157
+2	Left Up
+5	149
+2	Left Down
+5	85
+2	Left Up
+5	1725
+2	Left Down
+5	77
+2	Left Up
+5	3413
+2	Left Down
+5	117
+2	Left Up
+5	445
+2	Left Down
+5	125
+2	Left Up
+5	381
+2	Left Down
+5	149
+2	Left Up
+5	413
+2	Left Down
+5	125
+2	Left Up
+5	445
+2	Left Down
+5	157
+2	Left Up
+5	397
+2	Left Down
+5	133
+2	Left Up
+5	365
+2	Left Down
+5	93
+2	Left Up
+5	573
+2	Left Down
+5	93
+2	Left Up
+5	349
+2	Left Down
+5	133
+2	Left Up
+5	397
+2	Left Down
+5	157
+2	Left Up
+5	365
+2	Left Down
+5	165
+2	Left Up
+5	317
+2	Left Down
+5	141
+2	Left Up
+5	1805
+2	Left Down
+5	117
+2	Left Up
+5	3389
+2	Left Down
+5	117
+2	Left Up
+5	397
+2	Left Down
+5	173
+2	Left Up
+5	293
+2	Left Down
+5	173
+2	Left Up
+5	477
+2	Left Down
+5	141
+2	Left Up
+5	413
+2	Left Down
+5	149
+2	Left Up
+5	365
+2	Left Down
+5	205
+2	Left Up
+5	333
+2	Left Down
+5	157
+2	Left Up
+5	445
+2	Left Down
+5	165
+2	Left Up
+5	413
+2	Left Down
+5	157
+2	Left Up
+5	333
+2	Left Down
+5	197
+2	Left Up
+5	325
+2	Left Down
+5	165
+2	Left Up
+5	269
+2	Left Down
+5	133
+2	Left Up
+5	101
+2	Left Down
+5	77
+2	Left Up
+5	1821
+2	Left Down
+5	85
+2	Left Up
+5	3381
+2	Left Down
+5	125
+2	Left Up
+5	461
+2	Left Down
+5	141
+2	Left Up
+5	525
+2	Left Down
+5	125
+2	Left Up
+5	397
+2	Left Down
+5	149
+2	Left Up
+5	317
+2	Left Down
+5	133
+2	Left Up
+5	301
+2	Left Down
+5	141
+2	Left Up
+5	381
+2	Left Down
+5	133
+2	Left Up
+5	517
+2	Left Down
+5	133
+2	Left Up
+5	333
+2	Left Down
+5	189
+2	Left Up
+5	381
+2	Left Down
+5	197
+2	Left Up
+5	333
+2	Left Down
+5	141
+2	Left Up
+5	285
+2	Left Down
+5	149
+2	Left Up
+5	333
+2	Left Down
+5	53
+2	Left Up
+5	1725
+2	Left Down
+5	93
+2	Left Up
+5	3413
+2	Left Down
+5	133
+2	Left Up
+5	453
+2	Left Down
+5	149
+2	Left Up
+5	365
+2	Left Down
+5	157
+2	Left Up
+5	333
+2	Left Down
+5	181
+2	Left Up
+5	333
+2	Left Down
+5	157
+2	Left Up
+5	381
+2	Left Down
+5	149
+2	Left Up
+5	397
+2	Left Down
+5	141
+2	Left Up
+5	541
+2	Left Down
+5	157
+2	Left Up
+5	397
+2	Left Down
+5	149
+2	Left Up
+5	333
+2	Left Down
+5	189
+2	Left Up
+5	333
+2	Left Down
+5	197
+2	Left Up
+5	325
+2	Left Down
+5	197
+2	Left Up
+5	1613
+2	Left Down
+5	133
+2	Left Up
+5	3597
+2	Left Down
+5	133
+2	Left Up
+5	485
+2	Left Down
+5	149
+2	Left Up
+5	437
+2	Left Down
+5	149
+2	Left Up
+5	381
+2	Left Down
+5	101
+2	Left Up
+5	397
+2	Left Down
+5	141
+2	Left Up
+5	365
+2	Left Down
+5	101
+2	Left Up
+5	373
+2	Left Down
+5	101
+2	Left Up
+5	557
+2	Left Down
+5	173
+2	Left Up
+5	381
+2	Left Down
+5	133
+2	Left Up
+5	381
+2	Left Down
+5	125
+2	Left Up
+5	349
+2	Left Down
+5	165
+2	Left Up
+5	285
+2	Left Down
+5	141
+2	Left Up
+5	1645
+2	Left Down
+5	133
+2	Left Up
+5	3533
+2	Left Down
+5	101
+2	Left Up
+5	413
+2	Left Down
+5	157
+2	Left Up
+5	341
+2	Left Down
+5	173
+2	Left Up
+5	349
+2	Left Down
+5	221
+2	Left Up
+5	365
+2	Left Down
+5	165
+2	Left Up
+5	389
+2	Left Down
+5	181
+2	Left Up
+5	317
+2	Left Down
+5	117
+2	Left Up
+5	549
+2	Left Down
+5	165
+2	Left Up
+5	333
+2	Left Down
+5	157
+2	Left Up
+5	413
+2	Left Down
+5	165
+2	Left Up
+5	341
+2	Left Down
+5	117
+2	Left Up
+5	365
+2	Left Down
+5	189
+2	Left Up
+5	4013
